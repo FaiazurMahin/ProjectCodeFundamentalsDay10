@@ -1,3 +1,5 @@
+//Stackkk
+
 class learningstack{
     constructor(){
         Array.items=[];
@@ -26,3 +28,28 @@ console.log(learningstack01.peek());
 
 learningstack01.pop();
 console.log(learningstack01.peek());
+
+//Queueee
+
+class learningqueue{
+    constructor(){
+        this.items = [];
+    }
+
+    enqueue(...elements){
+        this.items.unshift(...elements);
+    }
+    dequeue(){
+        if(this.items.length === 0){
+            return "queue is empty";
+        }
+        return this.items.shift();
+    }
+    peek(){
+        return this.items[0];
+    }
+}
+
+const learningqueue01 = new learningqueue;
+this.items.unshift(10);
+console.log(this.items.peek());
